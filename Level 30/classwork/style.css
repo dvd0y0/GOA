@@ -1,0 +1,29 @@
+.img1 {
+    width: 300px;
+    height: 600xp;
+    border: 2px solid black;
+
+    background-image: url(./Georgia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    width: 300px;
+    height: 600xp;
+    border: 2px solid black;
+
+    background-image: url(./china.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    width: 300px;
+    height: 600xp;
+    border: 2px solid black;
+
+    background-image: url(./America.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:  #0D1A2D;
+}
+.parent{
+    background-color: #14273E;
+    width: 295px;
+    height: 600px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    justify-self: center;
+    margin-top: 80px;
+}
+.box-image{
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 260PX;
+}
+.title {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title:hover{
+    transition: 2s;
+    color: #00A0B8;
+}
+.descriptions {
+    color: #364A65;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hr{
+    width: 250px;
+    margin-left: 5px;
+    background: #162940;
+}
+.profile{
+    height: 50px;
+}
+.creation{
+    color: #364A65;
+    margin-top: -33px;
+    margin-left: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.name{
+    color: whitesmoke;
+    margin-left: 5px;
+}
+.name:hover{
+    transition: 2s;
+    color: #00A0B8;
+}
+.txt-1{
+    color: #05FDFC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 28px;
+    margin-top: -26px;
+}
+.clock{
+    margin-left: 130px;
+    margin-top: -46px;
+}
+.txt-2{
+    color: #435977;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 185px;
+    margin-top: -35px;
+}
