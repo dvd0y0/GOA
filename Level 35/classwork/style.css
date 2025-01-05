@@ -1,0 +1,105 @@
+/* .square{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.skew:hover {
+    transform: skew(20deg, 20deg);
+}
+  .translate:hover {
+    transform: translate(50px, 50px);
+}
+  .rotate {
+    background-color: lightblue;
+}
+  .scale {
+    background-color: lightcoral;
+}
+  .skew {
+    background-color: lightgreen;
+}
+  .translate {
+    background-color: lightgoldenrodyellow;
+} */
+
+/* #2 */
+
+/* a{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    color: darkorange;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+      transform: scale(1.2) rotate(30deg);
+    }
+    img {
+      width: 200px;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.2);
+    }
+
+    #3 */
+
+    /* :root {
+        --primary-color:  #4CAF50;
+        --secondary-color:  #FFC107;
+        --font-size: 20px;
+        --spacing: 2px;
+        --padding: 10px;
+        --margin: 15px;
+    }
+    
+    .box-1 {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        font-size: var(--font-size);
+        letter-spacing: var(--spacing);
+        padding: var(--padding);
+        margin: var(--margin);
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        transform: rotate(15deg);
+        transition: transform 0.3s ease;
+    }
+    
+    .box2 {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-size: calc(var(--font-size) + 2px);
+        padding: var(--padding);
+        margin: var(--margin);
+        display: grid;
+        place-items: center;
+        transform: scale(1.2);
+        transition: background-color 0.3s ease;
+      }
+    
+      .box3 {
+        color: var(--secondary-color);
+        background-color: #333;
+        font-size: var(--font-size);
+        letter-spacing: var(--spacing);
+        padding: var(--padding);
+        margin: var(--margin);
+        position: relative;
+        transform: translateY(20px);
+        transition: transform 0.3s ease
+      } */

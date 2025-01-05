@@ -1,0 +1,122 @@
+.d1{
+    width: 400px;
+    color: wheat;
+    background: linear-gradient(rgb(224, 81, 220),rgb(141, 54, 136));
+    border-radius: 30px ;
+    box-shadow: 4px 4px 17px rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.img1{
+    width: 1000px;
+    justify-content: center;
+}
+
+.parent{
+    display: flex;
+    gap: 200px;
+}
+
+.parent2{
+    display: flex;
+    gap: 500px;
+}
+
+.parent3{
+    display: flex;
+    gap: 200px;
+}
+
+.parent4{
+    display: flex;
+    gap: 495px;
+}
+
+.h22{
+    width: 400px;
+}
+
+.img2{
+    width: 650px;
+    justify-content: center;
+}
+
+.parent5{
+    display: flex;
+    gap: 250px;
+}
+
+.h5{
+    font-size: 50px;
+}
+
+.parent6{
+    display: flex;
+    gap: 200px;
+}
+
+.h888{
+    font-size: 100px;
+}
+
+.h8888{
+    font-size: 40px;
+}
+
+.img3{
+    width: 1500px;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-background{
+    width: 1000px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.huddle-logo {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 100px;
+}
+
+.lorem-1{
+    width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -330px;
+    color: white;
+    margin-left: 100px;
+}
+
+
+.icons {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+.paragraphs-1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 130px;
+    margin-top: -70px;
+}
+
+.paragraphs-2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 130px;
+    margin-top: 8px;
+}
+
+.icons-3{
+    margin-top: 20px;
+    margin-left: 100px;
+}
