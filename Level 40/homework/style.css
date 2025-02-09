@@ -1,0 +1,53 @@
+body{
+    display: grid;
+    gap: 30px 60px;
+    grid-template-areas: 
+    "danil jon kira"
+    "jae patrick kira"
+    ;
+    background-color: rgb(237, 242, 248);
+
+    height: 100vh;
+}
+
+.danil{
+    grid-area: danil;
+    background-color: rgb(115, 63, 200);
+    border-radius: 20px;
+}
+
+.jon{
+    grid-area: jon;
+    background-color: rgb(73, 85, 107);
+    border-radius: 20px;
+}
+
+.kira{
+    grid-area: kira;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.jea{
+    grid-area: jae;
+background-color: rgb(255, 255, 255);
+border-radius: 20PX;
+}
+
+.img{
+    border-radius: 50%;
+}
+
+.h1-colors{
+    color: rgb(253, 233, 255);
+}
+
+.h2-colors{
+    color: rgb(160, 149, 161);
+}
+
+.patrick{
+    grid-area: patrick;
+    background-color: rgb(24, 32, 45)c;
+    border-radius: 20px;
+}
+
