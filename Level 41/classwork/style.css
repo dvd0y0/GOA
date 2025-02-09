@@ -1,0 +1,28 @@
+header{
+    background-color: rgb(5, 131, 55);
+    border-radius: 150px;
+    width: 400px;
+}
+
+img{
+    border-radius: 200px;
+}
+
+.parent3{
+    display: flex;
+    gap: 100px;
+}
+
+@media(max-width: 768px){
+    header{
+        display: none;
+    }
+}
+
+@media(max-width: 425px){
+    header{
+        position: fixed;
+        bottom: 0;
+    }
+}
+
