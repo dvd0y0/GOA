@@ -1,0 +1,46 @@
+# 1
+def open_or_senior(data):
+    return ["Senior" if age >= 55 and handicap > 7 else "Open" for age, handicap in data]
+
+# 2
+def find_next_square(sq):
+
+    root = sq ** 0.5
+
+    if root.is_integer():
+
+        return (root + 1) ** 2
+
+    return -1
+
+# 3
+def row_sum_odd_numbers(n):
+    return n ** 3
+
+# 4
+def nb_year(p0, percent, aug, p):
+
+    percent = percent / 100
+
+    current_pop = p0
+    years = 0
+    
+
+    while current_pop < p:
+
+        current_pop = current_pop + current_pop * percent + aug
+
+        current_pop = int(current_pop)
+
+        years += 1
+    
+    return years
+
+# 5
+def printer_error(s):
+
+    length = len(s)
+
+    errors = sum(1 for char in s if char > 'm')
+
+    return f"{errors}/{length}"

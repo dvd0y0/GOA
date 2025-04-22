@@ -1,0 +1,22 @@
+ # 1 (py)
+
+ def open_or_senior(data):
+     result = []
+     for age, handicap in data:
+         if age >= 55 and handicap > 7:
+             result.append("Senior")
+         else:
+             result.append("Open")
+     return result
+
+ # 2 (py)
+ 
+ def printer_error(s):
+    err = 0
+
+    for i in s:
+        if i < 'a' or i > 'm':
+            err += 1
+    return f'{err}/{len(s)}'
+
+ # 3
