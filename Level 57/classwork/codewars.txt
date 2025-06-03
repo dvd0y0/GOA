@@ -1,0 +1,27 @@
+# 1
+function printerError(s) {
+    let errors = 0;
+
+    for (let char of s) {
+
+        if (char > 'm') {
+            errors++;
+        }
+    }
+    return `${errors}/${s.length}`;
+}
+
+# 2
+function openOrSenior(data) {
+    const result = [];
+    for (let i = 0; i < data.length; i++) {
+        const age = data[i][0];
+        const handicap = data[i][1];
+        if (age >= 55 && handicap > 7) {
+            result.push("Senior");
+        } else {
+            result.push("Open");
+        }
+    }
+    return result;
+}

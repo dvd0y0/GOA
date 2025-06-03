@@ -1,0 +1,86 @@
+# 1
+function replace(s) {
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    let result = '';
+    for (let char of s) {
+        if (vowels.includes(char)) {
+            result += '!';
+        } else {
+            result += char;
+        }
+    }
+    return result;
+}
+
+# 2
+function isSquare(n) {
+    if (n < 0) return false; 
+    let sqrt = 0;
+    while (sqrt * sqrt <= n) {
+        if (sqrt * sqrt === n) return true;
+        sqrt++;
+    }
+    return false;
+}
+
+# 3
+function smallEnough(a, limit) {
+    for (let num of a) {
+        if (num > limit) {
+            return false;
+        }
+    }
+    return true;
+}
+
+# 4
+function countRedBeads(n) {
+    let red = 0;
+    for (let i = 1; i < n - 1; i++) {
+        red += 2;
+    }
+    return red;
+}
+
+# 5
+function getGrade(s1, s2, s3) {
+    let avg = (s1 + s2 + s3) / 3;
+    if (avg >= 90 && avg <= 100) return 'A';
+    if (avg >= 80 && avg < 90) return 'B';
+    if (avg >= 70 && avg < 80) return 'C';
+    if (avg >= 60 && avg < 70) return 'D';
+    return 'F';
+}
+
+# 6
+function isSquare(n) {
+    if (n < 0) return false
+    let i = 0
+    while (i * i <= n) {
+        if (i * i === n) return true
+        i++
+    }
+    return false
+}
+
+# 7
+function rowSumOddNumbers(n) {
+    let start = n * (n - 1) + 1
+    let sum = 0
+    for (let i = 0; i < n; i++) {
+        sum += start + 2 * i
+    }
+    return sum
+}
+
+# 8
+function findNextSquare(sq) {
+    let i = 0
+    while (i * i < sq) {
+        i++
+    }
+    if (i * i === sq) {
+        return (i + 1) * (i + 1)
+    }
+    return -1
+}
