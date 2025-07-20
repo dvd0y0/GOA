@@ -1,0 +1,28 @@
+# 1
+function checkAlive (health) {
+  if (health <= 0) {
+    return false
+  } else {
+    return true
+  }
+}
+
+# 2
+function positiveSum(arr) {
+  return arr.reduce((sum, num) => sum + (num > 0 ? num : 0), 0);
+}
+
+# 3
+function fakeBin(x) {
+  let num = 0;
+  if (num < 5) {
+    return 0;
+  } else {
+    return num++;
+  }
+}
+
+# 4
+function grow(x) {
+  return x.reduce((product, num) => product * num, 1);
+}

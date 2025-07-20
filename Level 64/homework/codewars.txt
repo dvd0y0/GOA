@@ -1,0 +1,22 @@
+# 1
+def checkAlive(health):
+    if health <= 0:
+        return False
+    else:
+        return True
+
+# 2
+def positiveSum(arr):
+    return sum(num for num in arr if num > 0)
+
+# 3
+def fakeBin(x):
+    return ''.join('0' if int(d) < 5 else '1' for d in str(x))
+
+# 4
+def grow(x):
+    product = 1
+    for num in x:
+        product *= num
+    return product
+
