@@ -1,0 +1,26 @@
+# 1
+function invert(arr) {
+  let res = [];
+  for(let i = 0; i < arr.length;i++){
+    res.push(-arr[i]);
+  }
+  return res
+}
+# 2
+function getAverage(marks) {
+  let sum = 0;
+  for (let i = 0; i < marks.length; i++) {
+    sum += marks[i];
+  }
+  return Math.floor(sum / marks.length);
+}
+# 3
+function check(a, x) {
+  let found = false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] === x) {
+      found = true;
+    }
+  }
+  return found;
+}
