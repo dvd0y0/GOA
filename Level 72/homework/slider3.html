@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider { text-align: center; margin: 20px; }
+        img { width: 500px; height: auto; transition: opacity 1s; }
+        .dots { margin-top: 10px; }
+        .dot { height: 10px; width: 10px; background: gray; border-radius: 50%; display: inline-block; margin: 0 5px; }
+        .active { background: blue !important; }
+        button { margin: 5px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <button onclick="prev()">Back</button>
+        <img src="1.jpg">
+        <button onclick="next()">Next</button>
+        <div class="dots"></div>
+    </div>
+    <script src="slider3.js"></script>
+</body>
+</html>

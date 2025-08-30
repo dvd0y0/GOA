@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider { max-width: 800px; margin: 20px auto; text-align: center; background: #f0f0f0; padding: 20px; border-radius: 10px; }
+        img { width: 100%; height: auto; border-radius: 5px; transition: opacity 0.5s; }
+        .dots { margin-top: 10px; }
+        .dot { height: 12px; width: 12px; background: #ccc; border-radius: 50%; display: inline-block; margin: 0 5px; cursor: pointer; }
+        .active { background: #ff6f61 !important; }
+        button { background: #ff6f61; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        @media (max-width: 600px) { .slider { margin: 10px; padding: 10px; } }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <button onclick="prev()">Previous</button>
+        <img src="11.png">
+        <button onclick="next()">Next</button>
+        <div class="dots"></div>
+    </div>
+    <script src="slider4.js"></script>
+</body>
+</html>
