@@ -1,0 +1,31 @@
+#1
+function sumTwoSmallestNumbers(numbers) {  
+  numbers.sort((a, b) => a - b);
+  return numbers[0] + numbers[1]; 
+}
+
+#2
+var isSquare = function(n) {
+  if (n < 0) return false;
+  const root = Math.floor(Math.sqrt(n));
+  return root * root === n;
+};
+
+#3 
+function repeatStr(n, s) {
+  if (n <= 0) return "";
+  return s + repeatStr(n - 1, s);
+}
+
+#4
+const sumNested = arr => {
+  let sum = 0;
+  for (let item of arr) {
+    if (typeof item === 'number') {
+      sum += item;
+    } else if (Array.isArray(item)) {
+      sum += sumNested(item);
+    }
+  }
+  return sum;
+};
