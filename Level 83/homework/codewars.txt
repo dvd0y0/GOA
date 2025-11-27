@@ -1,0 +1,49 @@
+# 1
+def nth_smallest(arr, pos):
+    return sorted(arr)[pos - 1]
+
+# 2 
+def calculator(txt):
+    parts = txt.split()
+    a = len(parts[0])
+    op = parts[1]
+    b = len(parts[2])
+
+    if op == '+':
+        r = a + b
+    elif op == '-':
+        r = a - b
+    elif op == '*':
+        r = a * b
+    else:  # //
+        r = a // b
+
+    return '.' * r
+
+# 3
+def get_middle(s):
+    n = len(s)
+    mid = n // 2
+
+    if n % 2 == 1:
+        return s[mid]
+    return s[mid - 1 : mid + 1]
+
+# 4
+def vowel_indices(word):
+    vowels = set('aeiouyAEIOUY')
+    return [i + 1 for i, c in enumerate(word) if c in vowels]
+
+# 5
+def bumps(road):
+    count = road.count('n')
+    return "Woohoo!" if count <= 15 else "Car Dead"
+
+# 6
+def freq_seq(s, sep):
+    count = {}
+    for char in s:
+        count[char] = count.get(char, 0) + 1
+    return sep.join(str(count[char]) for char in s)
+
+# 7
