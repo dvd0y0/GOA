@@ -1,0 +1,38 @@
+# 1
+def capitalize(s):
+    first = ''.join([char.upper() if i % 2 == 0 else char.lower() for i, char in enumerate(s)])
+    second = ''.join([char.upper() if i % 2 != 0 else char.lower() for i, char in enumerate(s)])
+    return [first, second]
+
+# 2
+def fizzbuzz(n):
+    result = []
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            result.append("FizzBuzz")
+        elif i % 3 == 0:
+            result.append("Fizz")
+        elif i % 5 == 0:
+            result.append("Buzz")
+        else:
+            result.append(i)
+    return result
+
+# 3
+def greet(name):
+    capitalized_name = name.capitalize()
+    return f"Hello {capitalized_name}!"
+
+# 4
+ def vaporcode(s):
+    s = s.replace(" ", "")
+    s = s.upper()
+    return "  ".join(s)
+
+# 5
+def reverse_number(n):
+    sign = -1 if n < 0 else 1
+    abs_n = abs(n)
+    str_n = str(abs_n)[::-1]
+    rev_n = int(str_n)
+    return sign * rev_n
