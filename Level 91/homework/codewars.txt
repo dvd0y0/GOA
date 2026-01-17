@@ -1,0 +1,37 @@
+# 1
+def maskify(cc):
+    return '#' * (len(cc) - 4) + cc[-4:] if len(cc) > 4 else cc
+
+# 2
+def accum(s):
+    return '-'.join((c*(i+1)).capitalize() for i,c in enumerate(s))
+
+# 3
+def get_middle(s):
+    length = len(s)
+    mid = length // 2
+
+    if length % 2 == 1:
+        return s[mid]
+    else:
+        return s[mid-1:mid+1]
+
+# 4
+def is_anagram(test, original):
+    test = test.lower()
+    original = original.lower()
+    return sorted(test) == sorted(original)
+
+# 5
+def check_exam(arr1, arr2):
+    score = 0
+
+    for correct, answer in zip(arr1, arr2):
+        if answer == correct:
+            score += 4
+        elif answer == "":
+            score += 0
+        else:
+            score -= 1
+
+    return max(score, 0)

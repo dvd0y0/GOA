@@ -1,0 +1,45 @@
+# 1
+def in_array(array1, array2):
+    result = set()
+    for word in array1:
+        if any(word in word2 for word2 in array2):
+            result.add(word)
+    return sorted(result)
+
+# 2
+def solution(number):
+    if number < 1:
+        return 0
+
+    def sum_divisible_by(k):
+        m = (number - 1) // k
+        return k * m * (m + 1) // 2
+
+    return sum_divisible_by(3) + sum_divisible_by(5) - sum_divisible_by(15)
+
+# 3
+def spin_words(sentence):
+    words = sentence.split()
+    spun_words = []
+    for word in words:
+        if len(word) >= 5:
+            spun_words.append(word[::-1])
+        else:
+            spun_words.append(word)
+    return ' '.join(spun_words)
+
+# 4
+def likes(names):
+    if not names:
+        return "no one likes this"
+
+    if len(names) == 1:
+        return f"{names[0]} likes this"
+
+    if len(names) == 2:
+        return f"{names[0]} and {names[1]} like this"
+
+    if len(names) == 3:
+        return f"{names[0]}, {names[1]} and {names[2]} like this"
+
+    return f"{names[0]}, {names[1]} and {len(names)-2} others like this"

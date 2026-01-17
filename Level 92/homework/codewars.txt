@@ -1,0 +1,51 @@
+# 1
+def get_drink_by_profession(profession):
+    profession = profession.lower()
+
+    if "джаброн" in profession or "jabroni" in profession:
+        return "Patron Tequila"
+    elif "школьн" in profession or "school" in profession:
+        return "Anything with Alcohol"
+    elif "программист" in profession or "programmer" in profession:
+        return "Hipster Craft Beer"
+    elif "байкер" in profession or "bike" in profession:
+        return "Moonshine"
+    elif "политик" in profession or "politician" in profession:
+        return "Your tax dollars"
+    elif "рэпер" in profession or "rapper" in profession:
+        return "Cristal"
+    else:
+        return "Beer"
+
+# 2
+def user_contacts(data):
+    result = {}
+    for user in data:
+        name = user[0]
+        zip_code = user[1] if len(user) > 1 else None
+        result[name] = zip_code
+    return result
+
+# 3
+def define_suit(card):
+    suit = card[-1]
+    if suit == 'C':
+        return 'clubs'
+    if suit == 'D':
+        return 'diamonds'
+    if suit == 'H':
+        return 'hearts'
+    return 'spades'
+
+# 4
+def get_first_python(devs):
+    python_devs = [d for d in devs if d["language"] == "Python"]
+    return (
+        f"{python_devs[0]['first_name']}, {python_devs[0]['country']}"
+        if python_devs else
+        "There will be no Python developers"
+    )
+
+# 5
+def sort_dict(d):
+    return sorted(d.items(), key=lambda x: x[1], reverse=True)
